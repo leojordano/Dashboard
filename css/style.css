@@ -1,0 +1,141 @@
+.container-fluid {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  font-family: "Mulish", sans-serif;
+}
+
+.dashboard-body {
+  width: 100%;
+}
+
+.side-bar {
+  background-color: #363740;
+  width: 205px;
+  height: 100vh;
+  position: relative;
+}
+.side-bar .logo-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #a4a6b3;
+  margin-bottom: 50px;
+  position: relative;
+  top: 20px;
+}
+.side-bar .logo-cont h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px 12px;
+}
+.side-bar .menu {
+  color: #a4a6b3;
+}
+.side-bar .menu ul {
+  list-style: none;
+  padding: 0px;
+}
+.side-bar .menu ul li.active {
+  color: #dde2ff;
+}
+.side-bar .menu ul li.active svg {
+  fill: #dde2ff;
+  opacity: 1;
+}
+.side-bar .menu ul li.active::after {
+  display: block;
+}
+.side-bar .menu ul li {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  font-family: "Mulish", sans-serif;
+  position: relative;
+  transition: 0.2s all ease;
+  cursor: pointer;
+}
+.side-bar .menu ul li svg {
+  font-size: 16px;
+  margin-left: 32px;
+  margin-right: 24px;
+  fill: #a4a6b3;
+  opacity: 0.4;
+}
+.side-bar .menu ul li:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background-color: #dde2ff;
+  display: none;
+}
+.side-bar .menu ul li:hover {
+  background-color: rgba(159, 162, 180, 0.08);
+  color: #dde2ff;
+}
+.side-bar .menu ul li:hover svg {
+  fill: #dde2ff;
+  opacity: 1;
+}
+.side-bar .menu ul li:hover::after {
+  display: block;
+}
+
+.top-bar {
+  margin: 15px auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar h2 {
+  color: #252733;
+  font-weight: bold;
+  font-size: 24px;
+}
+.top-bar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-bar div div:nth-child(1) {
+  margin-right: 65px;
+}
+.top-bar div div:nth-child(1) svg {
+  margin: 0px 12px;
+  cursor: pointer;
+}
+.top-bar div div:nth-child(1) svg:nth-child(1) {
+  stroke: #c5c7cd;
+}
+.top-bar div div:nth-child(1) svg:nth-child(2) {
+  fill: #c5c7cd;
+}
+.top-bar div div:nth-child(1) svg:nth-child(1):hover {
+  stroke: #999ba0;
+}
+.top-bar div div:nth-child(1) svg:nth-child(2):hover {
+  fill: #999ba0;
+}
+.top-bar div span {
+  color: #252733;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.2px;
+  margin-right: 14px;
+}
+.top-bar div .cont-perfil-img {
+  border-radius: 50px;
+}
+.top-bar div .cont-perfil-img img {
+  border-radius: 50px;
+  width: 44px;
+}
+
+/*# sourceMappingURL=style.css.map */
