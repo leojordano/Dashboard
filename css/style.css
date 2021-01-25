@@ -11,7 +11,7 @@
 
 .side-bar {
   background-color: #363740;
-  width: 205px;
+  width: 255px;
   height: 100vh;
   position: relative;
 }
@@ -132,10 +132,118 @@
 }
 .top-bar div .cont-perfil-img {
   border-radius: 50px;
+  border: 1.5px solid #dfe0eb;
 }
 .top-bar div .cont-perfil-img img {
   border-radius: 50px;
   width: 44px;
+}
+.top-bar #search-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-bar #search-box input {
+  display: none;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  outline: none;
+  border: none;
+  width: 0px;
+  border-bottom: 1px solid #a4a6b3;
+  color: #a4a6b3;
+  transition: 0.2s all ease-in;
+}
+
+.cards {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+  margin: 0px 15px;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.cards div h3 {
+  font-size: 19px;
+  color: #a4a6b3;
+  font-weight: bold;
+}
+.cards div span {
+  color: #252733;
+  font-size: 40px;
+  font-weight: bold;
+}
+.cards div:hover {
+  border: 1px solid #3751ff;
+}
+.cards div:hover h3,
+.cards div:hover span {
+  color: #3751ff;
+}
+
+.chart {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 0px 20px;
+  justify-content: space-around;
+}
+.chart .line-chart {
+  width: 700px;
+}
+.chart .chart-title h3 {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #252733;
+}
+.chart .chart-title span {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #a4a6b3;
+}
+.chart .chart-numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.chart .chart-numbers div {
+  margin-bottom: 10px;
+}
+.chart .chart-numbers span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #a4a6b3;
+}
+.chart .chart-numbers h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #252733;
 }
 
 /*# sourceMappingURL=style.css.map */
